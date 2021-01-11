@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import ConcatCard from './ConcatCard';
+import IncrementDecrement from './IncrementDecrement';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div id="app">
+    <ConcatCard name ={'soul'} mobileNumber={347} workPhone={479}  email={"soul34@gmail.com"}/>
+    <ConcatCard name ={'barry'} mobileNumber={689}  email={"barry456@gmail.com"}/>
+    <ConcatCard name ={'thierno'} mobileNumber={224} workPhone={897}  email={"thierno324@gmail.com"}/>
+    <IncrementDecrement num={4} />
+  </div>
+
   );
 }
 
